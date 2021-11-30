@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="present.Views.JoinEventPage"
+             Title="Join Event">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Join" Clicked="Join_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="16" Padding="16">
+
+            <Label Text="Event Code" FontSize="Medium"/>
+            <Label Text="Enter access code provided by the event supervisor." FontSize="Small"/>
+            <Entry x:Name="CodeEntry" Text="{Binding Code}" Placeholder="XXX-XXX" FontSize="Small" MaxLength="7" CharacterSpacing="24" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

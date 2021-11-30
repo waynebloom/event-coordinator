@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="present.Views.RegisterPage"
+    Title="Register">
+
+    <ContentPage.Content>
+        <StackLayout Spacing="16" Padding="16">
+            <Entry Text="{Binding CurrentRegisterAttempt.Email}" FontSize="Medium" Placeholder="Email"/>
+            <Entry Text="{Binding CurrentRegisterAttempt.Password}" FontSize="Medium" Placeholder="Password" IsPassword="True"/>
+            <Entry Text="{Binding CurrentRegisterAttempt.ConfirmPassword}" FontSize="Medium" Placeholder="Confirm password"/>
+            <Entry Text="{Binding CurrentRegisterAttempt.FirstName}" FontSize="Medium" Placeholder="First name"/>
+            <Entry Text="{Binding CurrentRegisterAttempt.LastName}" FontSize="Medium" Placeholder="Last name"/>
+            <Button Text="Register" Clicked="Register_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
